@@ -529,7 +529,7 @@ export default function Home() {
           </div>
         </div>
         <div className="text-center text-sm mt-8">
-          &copy; 2024 Course. All rights reserved.
+          &copy; 2024 Course. All rights reserved.l
         </div>
       </footer>
     </>
