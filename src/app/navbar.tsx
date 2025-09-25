@@ -11,7 +11,7 @@ export default function Navbar() {
         </h1>
         <ul>
           <li className="justify-center   text-sm flex gap-6 mx-6 p-2 ">
-            <Link className="text-black " href={"Course"}>
+            <Link className="text-black " href={"course"}>
               Course
             </Link>
             <Link className="text-black " href={"Resource"}>
