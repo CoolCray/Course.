@@ -1,6 +1,8 @@
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
+  const pathname = usePathname();
   return (
     <>
       <nav className="px-32 py-4 flex   justify-between content-center shadow fixed left-0 right-0 bg-white">
@@ -11,7 +13,7 @@ export default function Navbar() {
         </h1>
         <ul>
           <li className="justify-center   text-sm flex gap-6 mx-6 p-2 ">
-            <Link className="text-black " href={"course"}>
+            <Link className={`mr-10 ${pathname === '/course' ? 'text-amber-300' : 'text-black'}` }  href={"course"}>
               Course
             </Link>
             <Link className="text-black " href={"Resource"}>
