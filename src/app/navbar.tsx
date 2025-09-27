@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -12,14 +13,35 @@ export default function Navbar() {
           </Link>
         </h1>
         <ul>
-          <li className="justify-center   text-sm flex gap-6 mx-6 p-2 ">
-            <Link className={`mr-10 ${pathname === '/course' ? 'text-amber-300' : 'text-black'}` }  href={"course"}>
+          <li className="justify-center text-sm flex gap-6 mx-6 p-2 ">
+            <Link
+              className={
+                pathname === "/course"
+                  ? "underline underline-offset-8 text-black"
+                  : "text-black"
+              }
+              href={"course"}
+            >
               Course
             </Link>
-            <Link className="text-black " href={"Resource"}>
+            <Link
+              className={
+                pathname === "/Resource"
+                  ? "underline underline-offset-8 text-black"
+                  : "text-black"
+              }
+              href={"Resource"}
+            >
               Resource
             </Link>
-            <Link className="text-black " href={"Pricing"}>
+            <Link
+              className={
+                pathname === "/Pricing"
+                  ? "underline underline-offset-8 text-black"
+                  : "text-black"
+              }
+              href={"Pricing"}
+            >
               Pricing
             </Link>
           </li>
