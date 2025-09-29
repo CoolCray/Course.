@@ -4,7 +4,7 @@ export default function Profile() {
       <div className="flex min-h-full flex-col justify-center h-screen content-center bg-gray-50 px-6 py-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <h2 className="mt-4 text-center text-2xl/9 font-bold tracking-tight text-gray-900">
-            Sign in to your account
+            Sign in
           </h2>
         </div>
 

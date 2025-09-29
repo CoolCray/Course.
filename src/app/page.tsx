@@ -16,13 +16,13 @@ export default function Home() {
               seumur hidup untuk mendukung perkembanganmu.
             </p>
             <div className="mt-8">
-              <button className="px-6 py-3 bg-black text-white rounded hover:bg-gray-700 transition-colors duration-200 ">
-                <Link className="text-white" href={"profile"}>
+              <button className="px-6 py-3 cursor-pointer bg-black text-white rounded hover:bg-gray-700 transition-colors duration-200 ">
+                <Link className="text-white" href={"profil"}>
                   Start Learning
                 </Link>
               </button>
-              <button className="px-6 py-3 bg-white text-white rounded hover:bg-gray-200 border-1 border-gray-200 mx-2 delay-200 transition-colors duration-200 ">
-                <Link className="text-black" href={"profile"}>
+              <button className="px-6 py-3 cursor-pointer bg-white text-white rounded hover:bg-gray-200 border-1 border-gray-200 mx-2 delay-200 transition-colors duration-200 ">
+                <Link className="text-black" href={"course"}>
                   Explore Course
                 </Link>
               </button>
@@ -397,7 +397,10 @@ export default function Home() {
       </div>
 
       {/* FAQ */}
-      <div className="justify-center content-center px-32 py-16 w-full bg-gray-50  gap-8">
+      <div
+        id="faq"
+        className="justify-center content-center px-32 py-16 w-full bg-gray-50  gap-8"
+      >
         {/* Deskirpsi */}
         <div className="justify-center content-center text-center">
           <h2 className="text-4xl text-black font-semibold ">
@@ -429,8 +432,8 @@ export default function Home() {
             </h5>
             <p className="mb-3 text-sm font-normal text-gray-700 dark:text-gray-400">
               Ya, setelah menyelesaikan course tertentu, kamu akan menerima
-              sertifikat yang dapat digunakan untuk memperkuat profil profesional
-              atau portofolio kerjamu.
+              sertifikat yang dapat digunakan untuk memperkuat profil
+              profesional atau portofolio kerjamu.
             </p>
           </div>
 
@@ -458,7 +461,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      
     </>
   );
 }

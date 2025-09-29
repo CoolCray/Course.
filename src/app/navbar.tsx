@@ -40,19 +40,19 @@ export default function Navbar() {
                   ? "underline underline-offset-8 text-black"
                   : "text-black"
               }
-              href={"Pricing"}
+              href={'#faq'}
             >
-              Pricing
+              FAQ
             </Link>
           </li>
         </ul>
         <div className="">
-          <button className="px-3 py-1.5 bg-white text-white rounded hover:bg-gray-200 border-1 border-gray-200 mr-2 transform duration-500 ">
+          <button className="px-3 py-1.5 cursor-pointer bg-white text-white rounded hover:bg-gray-200 border-1 border-gray-200 mr-2 transform duration-500 ">
             <Link className="text-black" href={"profil"}>
               Log in
             </Link>
           </button>
-          <button className="px-3 py-1.5 bg-black text-white rounded hover:bg-gray-900 ">
+          <button className="px-3 py-1.5 cursor-pointer bg-black text-white rounded hover:bg-gray-900 ">
             <Link className="text-white" href={"profil"}>
               Get access
             </Link>
